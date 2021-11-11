@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+
+    >
+
+    <RadioGroup
+        android:id="@+id/sureSec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:checkedButton="@id/radioButton1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Oyun Süresini Seçiniz"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:buttonTint="#F80000"
+            android:focusedByDefault="true"
+            android:fontFamily="@font/antic"
+            android:text="30 Saniye"
+            android:textColor="@color/white"
+            android:textColorHint="#BC1F1F" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:buttonTint="#CD650E"
+            android:fontFamily="@font/antic"
+            android:text="60 Saniye"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:buttonTint="#1A6BC6"
+            android:fontFamily="@font/antic"
+            android:text="90 Saniye"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:buttonTint="#64DF0D"
+            android:fontFamily="@font/antic"
+            android:text="120 Saniye"
+            android:textColor="@color/white" />
+
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/buttonToplama"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/toplama_btn"
+        android:text="Toplama Egzersizi"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/buttonCikarma"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/cikarma_btn"
+        android:text="Çıkarma Egzersizi"
+        android:textColor="@color/white"
+
+        />
+
+    <Button
+
+        android:id="@+id/buttonCarpma"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/carpma_btn"
+        android:text="Çarpma Egzersizi"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>
