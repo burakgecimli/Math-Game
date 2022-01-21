@@ -91,7 +91,6 @@ public class MultiplicationActivity extends AppCompatActivity {
 
 
     private void gameContinue() {
-
         number1 = random.nextInt(20);
         number2 = random.nextInt(20);
         correctAnswer = number1 * number2;
@@ -140,7 +139,6 @@ public class MultiplicationActivity extends AppCompatActivity {
                 finish();
                 startActivity(intent);
 
-
             }
         });
 
@@ -148,11 +146,9 @@ public class MultiplicationActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 finish();
-
             }
         });
         alert.setCancelable(false);
-
 
         alert.show();
 
