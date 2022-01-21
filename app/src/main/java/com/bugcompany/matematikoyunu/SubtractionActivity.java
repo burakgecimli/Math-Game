@@ -34,14 +34,11 @@ public class SubtractionActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
-
         Intent intent = getIntent();
         getCheckedTime = intent.getIntExtra("time", 0);
 
-
         gameContinue();
         startTimer();
-
 
         binding.buttonGonder.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,7 +89,6 @@ public class SubtractionActivity extends AppCompatActivity {
 
     }
 
-
     private void gameContinue() {
         number1 = random.nextInt(100);
         number2 = random.nextInt(100);
@@ -103,7 +99,6 @@ public class SubtractionActivity extends AppCompatActivity {
             correctAnswer = number2 - number1;
             binding.textViewSoruAlani.setText(number2 + " - " + number1);
         }
-
 
     }
 
@@ -156,11 +151,9 @@ public class SubtractionActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 finish();
-
             }
         });
         alert.setCancelable(false);
-
 
         alert.show();
 
