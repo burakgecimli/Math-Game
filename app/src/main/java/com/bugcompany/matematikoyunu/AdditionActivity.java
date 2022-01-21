@@ -33,13 +33,10 @@ public class AdditionActivity extends AppCompatActivity {
         binding = ActivityAdditionBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
-
-
+        
         Intent intent=getIntent();
         getCheckedTime=intent.getIntExtra("time",0);
-
-
-
+        
         gameContinue();
         startTimer();
 
@@ -58,8 +55,7 @@ public class AdditionActivity extends AppCompatActivity {
                         binding.textViewScore.setText(" " + userScore);
                         binding.buttonGonder.setEnabled(false);
                         binding.editTextCevap.setText("");
-
-
+                        
 
                     } else {
                         userLife--;
@@ -95,7 +91,6 @@ public class AdditionActivity extends AppCompatActivity {
 
 
     private void gameContinue() {
-
         number1 = random.nextInt(100);
         number2 = random.nextInt(100);
         correctAnswer = number1 + number2;
