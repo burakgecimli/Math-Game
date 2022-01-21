@@ -12,11 +12,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashScreen extends AppCompatActivity {
-
     TextView textViewSlogan, textViewAppName;
     ImageView imageViewLogo;
     Animation bottomAnimation, topAnimation, leftAnimation, rightAnimation;
-
 
     private static int time = 3000;
 
@@ -33,16 +31,13 @@ public class SplashScreen extends AppCompatActivity {
         leftAnimation = AnimationUtils.loadAnimation(this, R.anim.left_anim);
         rightAnimation = AnimationUtils.loadAnimation(this, R.anim.right_anim);
 
-
         imageViewLogo = findViewById(R.id.imageViewLogo);
         textViewAppName = findViewById(R.id.textViewAppName);
         textViewSlogan = findViewById(R.id.textViewSlogan);
 
-
         imageViewLogo.setAnimation(bottomAnimation);
         textViewAppName.setAnimation(leftAnimation);
         textViewSlogan.setAnimation(rightAnimation);
-
 
         new Handler().postDelayed(new Runnable() {
             @Override
